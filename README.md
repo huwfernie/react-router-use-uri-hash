@@ -8,15 +8,17 @@ This is a very lightweight React hook that will let you use URI hashes to naviga
 
 1. NPM Install and save the package to your project.
     - `npm install react-router-use-uri-hash --save`
-1. At the top of each page that will use it, import the package, then call it.
+1. At the top level component of each page that will use it, import the package, then call the hook.
     - `import { useUriHash } from "react-router-use-uri-hash";`
-    - useUriHash();
+    - `useUriHash();`
 1. Add a hash to the `to=""` prop of the **<Link>** element from **react-router-dom**
 
 ### Gotchas
 
 - Only include the `useUriHash()` once per page/view (on the highest/first component that renders).
-- This hook does not return anything
+- This hook does not return anything.
+- If a hash ID doesn't match (i.e. document.querySeletor("#section-1") returns null) then nothing should happen.
+- This hook should fail gracefully and log any errors to the console.
 
 
 ## Example
@@ -57,4 +59,4 @@ export default Home;
 
 ## Issues / Feature requests
 
-Use github to suggest improvemnts / updates / report bugs.
+Use github to suggest improvemnts / updates / report bugs : [https://github.com/huwfernie/react-router-use-uri-hash/issues](https://github.com/huwfernie/react-router-use-uri-hash/issues)
