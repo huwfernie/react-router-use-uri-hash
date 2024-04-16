@@ -1,0 +1,28 @@
+{
+  "name": "react-router-use-uri-hash",
+  "version": "1.0.0",
+  "description": "lightweight in page nagivation for use with react router",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huwfernie/react-router-use-uri-hash.git"
+  },
+  "keywords": [
+    "react",
+    "router",
+    "uri",
+    "hash",
+    "in",
+    "page",
+    "navigation"
+  ],
+  "author": "Huw Fernie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huwfernie/react-router-use-uri-hash/issues"
+  },
+  "homepage": "https://github.com/huwfernie/react-router-use-uri-hash#readme"
+}
